@@ -1,6 +1,6 @@
 # Sky-nyX 🌌
 
-Bienvenid@ a **Sky-nyX**, el portafolio de **Xuan Camacho**. Un espacio donde comparto mi viaje como desarrollador web y mis proyectos más destacados. 🌠
+Bienvenid@ a **Sky-nyX**, un espacio en donde comparto mi viaje como desarrollador web y mis proyectos más destacados. 🌠
 
 Aquí encontrarás un vistazo a mi estilo, mis habilidades y la pasión con la que desarrollo soluciones tecnológicas. Mi enfoque está en la calidad, la innovación y siempre mejorar lo que hago. **Sempre Avanti** (siempre adelante), esa es mi filosofía. 🚀
 
