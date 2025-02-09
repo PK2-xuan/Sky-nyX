@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading...</title>
+    <link rel="icon" type="image/x-icon" href="image-about.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.0/css/flag-icon.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="dark-theme.min.css" />
+    <link rel="stylesheet" href="styles.min.css" />
+  </head>
+
+  <body>
+    <div>
+      <nav class="navbar navbar-expand-lg style-navbar-responsive mt-2">
+        <div class="container">
+          <a class="navbar-brand label-hide-navbar">Sky nyX</a>
+
+          <div class="label-hide-navbar-class">
+            <div class="theme-switcher">
+              <div class="slider-container">
+                <div class="slider-circle" id="circle"></div>
+                <span class="slider-text" id="slider-text">M O D O</span>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link animado animadoBaj"
+                  href="#about"
+                  data-id="about"
+                  id="nav-about"
+                  >Sobre mí</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link animado animadoBaj2"
+                  href="#projects"
+                  data-id="projects"
+                  id="nav-projects"
+                  >Proyectos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link animado animadoBaj3"
+                  href="#contact"
+                  data-id="contact"
+                  id="nav-contact"
+                  >Contacto</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link animado animadoBaj4"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Idioma
+                </a>
+
+                <ul
+                  class="dropdown-menu custom-dropdown-width"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li>
+                    <a class="dropdown-item text-dark" id="language-es"
+                      >Español</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-dark" id="language-en"
+                      >Ingles</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <div
+              class="button_slide slide_diagonal ms-3 animado animadoBaj5"
+              id="nav-resume"
+            >
+              CV
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        class="offcanvas offcanvas-end custom-offcanvas style-offcanvas-custom"
+        tabindex="-1"
+        id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title home-title2" id="offcanvasNavbarLabel">
+            Sky nyX
+          </h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#about" id="offcanvas-about"
+                >Sobre mí</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#projects" id="offcanvas-projects"
+                >Proyectos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" id="offcanvas-contact"
+                >Contacto</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                id="navbarDropdown-offcanvas"
+                role="button"
+                aria-expanded="false"
+              >
+                Idioma
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item text-dark" id="language-es2"
+                    >Español</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-dark" id="language-en2"
+                    >Ingles</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div
+            class="button_slide slide_diagonal ms-3 mt-2 text-center"
+            id="offcanvas-cv"
+            style="width: 80%"
+          >
+            CV
+          </div>
+        </div>
+      </div>
+
+      <section id="home">
+        <div class="container container-personalizado">
+          <div class="">
+            <h5 class="home-subtitle animado animadoBaj" id="home-subtitle">
+              No Limit
+            </h5>
+            <h1 class="home-title text-center animado animadoBaj2">Sky nyX</h1>
+            <div class="text-center animado animadoBaj3">
+              <p class="mt-4 texto-home-centro mb-3" id="home-paragraph">
+                Soy estudiante de Ingeniería de Sistemas, con enfoque en backend
+                y frontend. Me estoy preparando para ser Fullstack y me apasiona
+                crear soluciones web que hagan la diferencia.
+              </p>
+              <a href="mailto:suan_c1@outlook.com">
+                <button
+                  class="style-button animado animadoBaj3"
+                  id="home-button"
+                >
+                  Contactame
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container container-personalizado">
+          <div class="row">
+            <h2 class="fw-bold mb-3 style_subtitle-line animado animadoArb">
+              <span class="number-colors">01.</span>
+              <span class="inf-colors" id="section-title-1">Sobre mí</span>
+              <hr class="line-style" />
+            </h2>
+
+            <div class="col-md-7 animado animadoArb2">
+              <div>
+                <p id="about-header">
+                  Hola, mi nombre es <b>Xuan Camacho</b>, soy un estudiante de
+                  Ingeniería de Sistemas de Perú
+                  <i class="flag-icon flag-icon-pe"></i> , con una gran pasión
+                  por la <b>programación</b> y el <b>desarrollo web</b>. Desde
+                  que empecé a programar, mi objetivo ha sido siempre que la
+                  tecnología sea accesible, sencilla y útil para todos. Me
+                  encanta estar al día con las tecnologías modernas y explorar
+                  cómo hacerlas más fáciles de usar.
+                </p>
+                <p id="about-second-paragraph">
+                  Me apasionan los videojuegos, y fue esa pasión la que me
+                  impulsó a aprender a programar. Creo que la tecnología debe
+                  ser una herramienta para mejorar la vida de las personas, y mi
+                  meta es contribuir a eso creando soluciones innovadoras
+                  <span id="ellipsis">...</span>
+                </p>
+
+                <div id="hiddenContent" class="hidden-content">
+                  <p id="about-hidden-content-1">
+                    Soy un futuro <b>Fullstack Developer</b> con interés en
+                    <b>UX/UI</b>, buscando siempre mejorar la experiencia del
+                    usuario a través de un diseño intuitivo y eficaz. Aunque no
+                    tengo experiencia laboral formal aún, he trabajado en varios
+                    proyectos que me han permitido aprender y crecer en el
+                    desarrollo web.
+                  </p>
+
+                  <p id="about-hidden-content-2">
+                    Mi lema es <b>Sempre Avanti</b> porque creo en avanzar
+                    siempre, sin rendirse. Mi sueño es llegar a ser CEO,
+                    liderando equipos que creen tecnologías que transformen el
+                    mundo.
+                  </p>
+
+                  <p id="about-hidden-content-3">
+                    Algunas de las tecnologías que utilizo para construir sitios
+                    web y aplicaciones son:
+                  </p>
+                </div>
+
+                <div class="button-container">
+                  <p id="readMoreBtn" class="text-primary" onclick="showMore()">
+                    Leer más
+                  </p>
+                  <p
+                    id="readLessBtn"
+                    class="text-primary"
+                    style="display: none"
+                    onclick="showLess()"
+                  >
+                    Ver menos
+                  </p>
+                </div>
+              </div>
+
+              <div class="row mt-3 container">
+                <div class="col-6">
+                  <ul class="list-unstyled">
+                    <li class="line-break">TypeScript & Node JS</li>
+                    <li class="line-break">React & Angular</li>
+                    <li class="line-break">HTML & CSS</li>
+                    <li class="line-break">Java & Python</li>
+                    <li class="line-break">GitHub & GitLab</li>
+                    <li class="line-break">Vercel</li>
+                  </ul>
+                </div>
+                <div class="col-6">
+                  <ul class="list-unstyled">
+                    <li class="line-break">Figma</li>
+                    <li class="line-break">JUnit</li>
+                    <li class="line-break">Postman</li>
+                    <li class="line-break">MySQL, SQL Server & MongoDB</li>
+                    <li class="line-break">Docker & Kubernetes</li>
+                    <li class="line-break">AWS & Azure</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-5 animado animadoArb2">
+              <div class="contenedor">
+                <div class="circulo"></div>
+                <div class="p-3 container-img text-center xd">
+                  <img src="Целая-иллюстрация (1).gif" alt="imagen about" />
+                </div>
+                <svg>
+                  <filter id="fuego">
+                    <feTurbulence
+                      x="0"
+                      y="0"
+                      baseFrequency="0.009"
+                      numOctaves="5"
+                      seed="3"
+                    >
+                      <animate
+                        attributeName="baseFrequency"
+                        dur="60s"
+                        values="0.02;0.005;0.03"
+                        repeatCount="indefinite"
+                      ></animate>
+                    </feTurbulence>
+                    <feDisplacementMap
+                      in="SourceGraphic"
+                      scale="30"
+                    ></feDisplacementMap>
+                  </filter>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="container container-personalizado">
+          <h2 class="fw-bold mb-3 style_subtitle-line animado animadoArb">
+            <span class="number-colors">02. </span>
+            <span class="inf-colors" id="section-title-2"> Mis Proyectos</span>
+            <hr class="line-style" />
+          </h2>
+
+          <div class="mb-4 animado animadoArb2">
+            <div class="btn-group" role="group" aria-label="Filter Projects">
+              <button
+                type="button"
+                class="filter-btn custom-btn"
+                data-filter="all"
+                id="filter-all"
+              >
+                Todos
+              </button>
+              <button
+                type="button"
+                class="filter-btn custom-btn"
+                data-filter="freelancer"
+              >
+                Freelancer
+              </button>
+              <button
+                type="button"
+                class="filter-btn custom-btn"
+                data-filter="fullstack"
+              >
+                Full Stack
+              </button>
+              <button
+                type="button"
+                class="filter-btn custom-btn"
+                data-filter="frontend"
+              >
+                Frontend
+              </button>
+              <button
+                type="button"
+                class="filter-btn custom-btn"
+                data-filter="backend"
+              >
+                Backend
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="mb-5 mt-5 pt-5 pb-5 project-card animado animadoArb2"
+            data-categories="freelancer"
+          >
+            <div class="row g-0 shadow rounded overflow-hidden">
+              <div class="col-md-5">
+                <div class="project-image-container">
+                  <img
+                    src="project-mara.png"
+                    alt="Freelance Project"
+                    class="project-image w-100"
+                  />
+                </div>
+              </div>
+
+              <div class="col-md-7">
+                <div class="project-content-wrapper">
+                  <div class="final-der-style">
+                    <p class="mb-3 subtitle" id="project-title-freelancer">
+                      Freelance Project
+                    </p>
+                    <p class="h3 mb-3" id="project-name-freelancer">
+                      Ecommerce MARA
+                    </p>
+                  </div>
+                  <p
+                    class="mb-4 content-color-p"
+                    id="project-description-freelancer"
+                  >
+                    Desarrollé un proyecto web de comercio electrónico para
+                    agilizar el proceso de compra online, mejorando la
+                    eficiencia de ventas y ofreciendo una experiencia de compra
+                    más rápida y fluida.
+                  </p>
+                  <div class="final-der-style">
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                      <span class="badge tech-tag">APIs</span>
+                      <span class="badge tech-tag">CSS</span>
+                      <span class="badge tech-tag">Google Services</span>
+                      <span class="badge tech-tag">MongoDB</span>
+                      <span class="badge tech-tag">Next.js</span>
+                      <span class="badge tech-tag">Node.js</span>
+                      <span class="badge tech-tag">React</span>
+                      <span class="badge tech-tag">Tailwind</span>
+                      <span class="badge tech-tag">Test</span>
+                      <span class="badge tech-tag">Typescript</span>
+                      <span class="badge tech-tag">Vercel</span>
+                      <span class="badge tech-tag">JavaScript</span>
+                      <span class="badge tech-tag">Sass</span>
+                    </div>
+                    <div class="fs-5">
+                      <ul class="list-icon-style">
+                        <li>
+                          <a
+                            href="https://tienda-mara-fronted-es.vercel.app/"
+                            target="_blank"
+                          >
+                            <i class="bx bx-link-external"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="mb-5 mt-5 pt-5 pb-5 project-card animado animadoArb2"
+            data-categories="backend"
+          >
+            <div class="row g-0 shadow rounded overflow-hidden">
+              <div class="col-md-4 order-2 order-md-1">
+                <div class="project-content-wrapper-izq">
+                  <div class="final-izq-style">
+                    <p class="mb-3 subtitle" id="project-title-backend">
+                      Backend Project
+                    </p>
+                    <p class="h3 mb-3" id="project-name-backend">
+                      Gestion de Usuarios
+                    </p>
+                  </div>
+                  <p
+                    class="mb-4 content-color-p"
+                    id="project-description-backend"
+                  >
+                    Desarrollé un sistema de gestión de usuarios y roles, junto
+                    con un sistema de notificaciones, completamente enfocado en
+                    el backend. Utilicé JWT y Spring Security para garantizar la
+                    protección y encriptación de las sesiones, asegurando un
+                    acceso seguro y controlado para los usuarios.
+                  </p>
+                  <div class="final-izq-style">
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                      <span class="badge tech-tag">API</span>
+                      <span class="badge tech-tag">JSON</span>
+                      <span class="badge tech-tag">JWT</span>
+                      <span class="badge tech-tag">JUnit</span>
+                      <span class="badge tech-tag">Java 11</span>
+                      <span class="badge tech-tag">MySQL</span>
+                      <span class="badge tech-tag">RESTful</span>
+                      <span class="badge tech-tag">Spring Boot</span>
+                      <span class="badge tech-tag">Spring Security</span>
+                    </div>
+                    <div class="fs-5">
+                      <ul class="list-icon-style">
+                        <li>
+                          <a
+                            href="https://github.com/PK2-xuan/JWT_GestionUsuarios"
+                            target="_blank"
+                          >
+                            <i class="bx bxl-github"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-8 order-1 order-md-2">
+                <div class="project-image-container-izq">
+                  <img
+                    src="project-back-end.png"
+                    alt="Backend Project"
+                    class="project-image w-100"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="mb-5 mt-5 pt-5 pb-5 project-card animado animadoArb2"
+            data-categories="frontend"
+          >
+            <div class="row g-0 shadow rounded overflow-hidden">
+              <div class="col-md-5">
+                <div class="project-image-container">
+                  <img
+                    src="project-frontend-lycoris.jpg"
+                    alt="Frontend Project"
+                    class="project-image w-100 text-center"
+                  />
+                </div>
+              </div>
+
+              <div class="col-md-7">
+                <div class="project-content-wrapper">
+                  <div class="final-der-style">
+                    <p class="mb-3 subtitle" id="project-title-frontend">
+                      Frontend Project
+                    </p>
+                    <p class="h3 mb-3" id="project-name-frontend">Lycoris</p>
+                  </div>
+                  <p
+                    class="mb-4 content-color-p"
+                    id="project-description-frontend"
+                  >
+                    Lycoris es una web de compras donde los usuarios pueden
+                    seleccionar productos, añadirlos al carrito y proceder al
+                    pago mediante un sistema de validación con token y
+                    verificación RENIEC (API).
+                  </p>
+                  <div class="final-der-style">
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                      <span class="badge tech-tag">Angular</span>
+                      <span class="badge tech-tag">Git</span>
+                      <span class="badge tech-tag">Guard</span>
+                      <span class="badge tech-tag">LocalStorage</span>
+                      <span class="badge tech-tag">Token</span>
+                    </div>
+                    <div class="fs-5">
+                      <ul class="list-icon-style">
+                        <li>
+                          <a
+                            href="https://github.com/PK2-xuan/app-venta"
+                            target="_blank"
+                          >
+                            <i class="bx bxl-github"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="mb-5 mt-5 pt-5 pb-5 project-card animado animadoArb2"
+            data-categories="frontend"
+          >
+            <div class="row g-0 shadow rounded overflow-hidden">
+              <div class="col-md-4 order-2 order-md-1">
+                <div class="project-content-wrapper-izq">
+                  <div class="final-izq-style">
+                    <p class="mb-3 subtitle" id="project-title-frontend1">
+                      Frontend Project
+                    </p>
+                    <p class="h3 mb-3" id="project-name-frontend1">Notas</p>
+                  </div>
+                  <p
+                    class="mb-4 content-color-p"
+                    id="project-description-frontend1"
+                  >
+                    Desarrollé un proyecto front-end para la creación de notas
+                    personales, utilizando React y Vite. La aplicación permite a
+                    los usuarios agregar y eliminar notas con descripciones
+                    sobre tareas o recordatorios.
+                  </p>
+                  <div class="final-izq-style">
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                      <span class="badge tech-tag">Vite</span>
+                      <span class="badge tech-tag">React</span>
+                      <span class="badge tech-tag">JavaScript</span>
+                      <span class="badge tech-tag">Tailwind CSS</span>
+                      <span class="badge tech-tag">GIT</span>
+                    </div>
+                    <div class="fs-5">
+                      <ul class="list-icon-style">
+                        <li>
+                          <a
+                            href="https://pk2-xuan.github.io/pruebita"
+                            target="_blank"
+                          >
+                            <i class="bx bx-link-external"></i>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a
+                            href="https://github.com/PK2-xuan/pruebita"
+                            target="_blank"
+                          >
+                            <i class="bx bxl-github"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-8 order-1 order-md-2">
+                <div class="project-image-container-izq">
+                  <img
+                    src="project-frontend-tareas.png"
+                    alt="Fullstack Project"
+                    class="project-image w-100"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="mb-5 mt-5 pt-5 pb-5 project-card animado animadoArb2"
+            data-categories="fullstack"
+          >
+            <div class="row g-0 shadow rounded overflow-hidden">
+              <div class="col-md-5">
+                <div class="project-image-container">
+                  <img
+                    src="project-fullstack.png"
+                    alt="Fullstack Project"
+                    class="project-image w-100"
+                  />
+                </div>
+              </div>
+
+              <div class="col-md-7">
+                <div class="project-content-wrapper">
+                  <div class="final-der-style">
+                    <p class="mb-3 subtitle" id="project-title-fullstack">
+                      Fullstack Project
+                    </p>
+                    <p class="h3 mb-3" id="project-name-fullstack">Lotus</p>
+                  </div>
+                  <p
+                    class="mb-4 content-color-p"
+                    id="project-description-fullstack"
+                  >
+                    Desarrollé un proyecto full-stack para la gestión de
+                    hotelería, optimizando la administración de habitaciones y
+                    reservaciones. Implementé un sistema de gestión de usuarios
+                    y sesiones, asegurando un acceso personalizado y seguro para
+                    administradores y clientes.
+                  </p>
+                  <div class="final-der-style">
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                      <span class="badge tech-tag">API</span>
+                      <span class="badge tech-tag">CSS</span>
+                      <span class="badge tech-tag">HTML</span>
+                      <span class="badge tech-tag">Java 8</span>
+                      <span class="badge tech-tag">JavaScript</span>
+                      <span class="badge tech-tag">JUnit</span>
+                      <span class="badge tech-tag">MySQL</span>
+                      <span class="badge tech-tag">Postman</span>
+                      <span class="badge tech-tag">PSF</span>
+                      <span class="badge tech-tag">RESTful</span>
+                      <span class="badge tech-tag">Spring Boot</span>
+                      <span class="badge tech-tag">JPA</span>
+                    </div>
+                    <div class="fs-5">
+                      <ul class="list-icon-style">
+                        <li>
+                          <a
+                            href="https://github.com/PK2-xuan/Hoteleria-Oasis"
+                            target="_blank"
+                          >
+                            <i class="bx bxl-github"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container container-personalizado text-center">
+          <h2 class="subtitle animado animadoArb">
+            <span id="section-title-3">03. ¿Qué sigue?</span>
+          </h2>
+          <h1 class="title animado animadoArb2" id="contact-title">
+            Contactame!
+          </h1>
+
+          <div class="contact-content animado animadoArb2">
+            <p id="contact-paragraph">
+              Actualmente estoy buscando nuevos retos y proyectos. Si estás
+              interesado en trabajar conmigo, ¡envíame un mensaje haciendo clic
+              en el botón de abajo!
+            </p>
+          </div>
+
+          <a href="mailto:suan_c1@outlook.com">
+            <button
+              class="style-button animado animadoArb2"
+              id="contact-button"
+            >
+              Escríbeme
+            </button></a
+          >
+        </div>
+        <div class="footer container text-center mb-3 mt-5 text-style-footer">
+          <div class="style-icon-footer">
+            <a id="linkedin-second">
+              <p class="d-none">social-icon</p>
+              <i class="bx bxl-linkedin-square"></i>
+            </a>
+
+            <a id="github-second">
+              <p class="d-none">social-icon</p>
+              <i class="bx bxl-github red"></i>
+            </a>
+
+            <a id="code-second">
+              <p class="d-none">social-icon</p>
+              <i class="bx bx-code-alt"></i>
+            </a>
+          </div>
+
+          <div>
+            <p id="contact-footer-portfolio">PORTAFOLIO | 2024</p>
+            <p id="contact-footer-credits" style="margin-top: -1.2rem">
+              Diseñado y construido por Pk2 - Xuan
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="side-elements">
+        <div class="right-bar">
+          <ul class="rotated-list">
+            <li>
+              <label for="dark" id="label-dark" class="">Oscuro</label>
+              <input type="checkbox" id="dark" />
+            </li>
+
+            <li>
+              <label for="light" id="label-light">Claro</label>
+              <input type="checkbox" id="light" />
+            </li>
+
+            <li>
+              <label for="custom" id="label-custom">Personalizado</label>
+              <input type="checkbox" id="custom" />
+            </li>
+          </ul>
+
+          <div class="line"></div>
+        </div>
+
+        <div class="left-bar">
+          <a id="linkedin">
+            <p class="d-none">social-icon</p>
+            <i class="bx bxl-linkedin-square"></i>
+          </a>
+
+          <a id="github">
+            <p class="d-none">social-icon</p>
+            <i class="bx bxl-github"></i>
+          </a>
+
+          <a id="code">
+            <p class="d-none">social-icon</p>
+            <i class="bx bx-code-alt"></i>
+          </a>
+
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="portfolioScripts.min.js"></script>
+    <script type="module" src="responsiveStyleMode.min.js"></script>
+    <script src="i18n.min.js"></script>
+    <script>
+      window.onload = function () {
+        setTimeout(function () {
+          document.title = "Sky nyX༼乡";
+        }, 500);
+      };
+    </script>
+    <script>
+      const cvButton = document.getElementById("offcanvas-cv");
+      const resumeButton = document.getElementById("nav-resume");
+
+      cvButton.addEventListener("click", function () {
+        window.open("resume.html", "_blank");
+      });
+
+      resumeButton.addEventListener("click", function () {
+        window.open("resume.html", "_blank");
+      });
+    </script>
+  </body>
+</html>
